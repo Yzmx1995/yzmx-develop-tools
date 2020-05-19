@@ -1,0 +1,56 @@
+.yzmx-message {
+    min-width: 380px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ebeef5;
+    background: #fff;
+    font-size: 14px;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    padding: 9px 20px;
+    border-radius: 30px;
+    background: rgba(237, 242, 252, .9);
+    color: #909399;
+    z-index: 9999;
+    opacity: .3;
+    transition: opacity .3s,transform .4s,top .4s,-webkit-transform .4s;
+
+    & .yzmx-message__content {
+        margin-left: 10px;
+    }
+}
+
+.yzmx-message--show {
+    transform: translate(-50%, 0);
+    opacity: 1;
+}
+
+.yzmx-message--hidden {
+    opacity: 0;
+}
+
+.yzmx-message--success {
+    border-color: #e1f3d8;
+    background: rgba(240, 249, 235, .9);
+    color: #67c23a;
+}
+
+.yzmx-message--warning {
+    border-color: #faecd8;
+    background: rgba(253, 246, 236, .9);
+    color: #e6a23c;
+}
+
+.yzmx-message--error {
+    border-color: #fde2e2;
+    background: rgba(254, 240, 240, .9);
+    color: #f56c6c;
+}
+
+@media (max-width: 768px) {
+    .yzmx-message {
+        min-width: 90%;
+        max-width: 90%;
+    }
+}
