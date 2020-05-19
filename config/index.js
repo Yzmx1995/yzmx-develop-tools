@@ -16,8 +16,8 @@ module.exports = {
         assetsPublicPath: '/',
         env: 'development',
         notifyOnErrors: true,
-        host: 'dev-vue-spa-scaffold.yzmx.com',
-        port: 9999,
+        host: 'yzmx.develop-tools.com',
+        port: 9998,
         proxy: {
             '/api/v1': 'http://localhost:8888'
         },
