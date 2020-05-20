@@ -1,8 +1,6 @@
 <template>
     <div id="app">
-        <div>header</div>
-        <router-view />
-        <div>footer</div>
+        <router-view style="flex-grow: 1;" />
     </div>
 </template>
 

@@ -19,7 +19,7 @@ module.exports = {
         host: 'yzmx.develop-tools.com',
         port: 9998,
         proxy: {
-            '/api/v1': 'http://localhost:8888'
+            '/api/v1': 'http://localhost:8081'
         },
         devtool: 'cheap-module-eval-source-map',
         cssSourceMap: true,

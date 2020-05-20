@@ -10,14 +10,14 @@ const router = new Router({
             name: 'page@Index',
             meta: { name: 'Index' },
             component: () =>
-                import('@/pages/HelloWorld/Index.vue')
+                import('@/pages/Index/Index.vue')
         },
         {
-            path: '/test',
-            name: 'page@test',
-            meta: { name: 'test' },
+            path: '/typeset',
+            name: 'page@Typeset',
+            meta: { name: 'Typeset' },
             component: () =>
-                import('@/pages/test.vue')
+                import('@/pages/Typeset/Index.vue')
         },
         {
             path: '*',

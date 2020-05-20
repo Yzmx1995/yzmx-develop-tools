@@ -21,9 +21,9 @@ function deepCopy(target) {
         return target;
     }
     if(Array.isArray(target)) {
-        return deepCopyArray;
+        return deepCopyArray(target);
     }
-    return deepCopyObject;
+    return deepCopyObject(target);
 }
 
 function deepCopyObject(target) {

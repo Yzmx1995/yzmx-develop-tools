@@ -1,7 +1,12 @@
 import Vue from 'vue';
 
-function GET_BANNERS(params = {}) {
-    return Vue.http.get();
+function GENERATE_TYPESET_JSON(params = {}) {
+    return Vue.http.post('/generate-typeset-array', params, {
+        responseType:'blob',
+        onDownloadProgress (a){
+            console.log(a, 'a')
+        }
+    });
 }
 
-export { GET_BANNERS };
+export { GENERATE_TYPESET_JSON };
