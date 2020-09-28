@@ -49,7 +49,7 @@ function isEmptyObject(value) {
 }
 
 function replaceLineFeed(html_str) {
-    return (html_str || '').replace(/\n/g, '<br/>');
+    return (html_str || '').replace(/\n/g, '<br>');
 }
 
 function addZeroBeforeNumberLessThanTen(value) {

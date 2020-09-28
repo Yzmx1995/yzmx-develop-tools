@@ -13,20 +13,13 @@ const router = new Router({
                 import('@/pages/Index/Index.vue')
         },
         {
-            path: '/typeset',
-            name: 'page@Typeset',
-            meta: { name: 'Typeset' },
-            component: () =>
-                import('@/pages/Typeset/Index.vue')
-        },
-        {
             path: '*',
             name: 'error@NotFoundPage',
             component: () =>
                 import('@/pages/Error.vue')
         }
     ],
-    mode: 'history',
+    // mode: 'history',
     scrollBehavior (to, from, savedPosition) {
         return { x: 0, y: 0 };
     }
